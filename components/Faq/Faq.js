@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Data } from "./Data";
 import { IconContext } from "react-icons";
 import { FiPlus, FiMinus } from "react-icons/fi";
-import Image from 'next/image'
+import Image from 'next/image';
+import bg from '../../assets/images/faq-header.jpg';
 
 function Faq() {
   const [clicked, setClicked] = useState(false);
@@ -15,7 +16,13 @@ function Faq() {
   };
   return (
     <div className="faq-photo-one">
-      <div className="faq-photo"></div>
+      <div className="faq-photo"
+    style={{
+      backgroundImage: `url(${bg.src})`,
+      width: '100%',
+      height: '100%',
+    }}>
+    </div>
         <div className="faq">
           <div className="FaqHeader" data-aos="fade-up">Frequently asked questions<div></div></div>
             <section className="FaqContainer" data-aos="zoom-in">
