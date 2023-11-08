@@ -1004,14 +1004,14 @@ input{
     color: black;
   }
 
-  .faq-photo{
+/*   .faq-photo{
     background-image: url("../public/assets/images/faq-header.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height:150px;
     margin-top: 3rem;
-  }
+  } */
 
   .jobs-request{
     max-width: 90%;
