@@ -1,17 +1,14 @@
 /** @type {import('next').NextConfig} */
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const withImages = require('next-images');
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = {
+  compiler: {
+    styledComponents: true,
+  },
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
-      },
-      {
-        protocol: 'http',
-        hostname: 'localhost',
       },
     ],
   },
@@ -27,9 +24,4 @@ const nextConfig = {
       ]
     return config
   },
-  
-}
-
-
-module.exports = withImages()
-module.exports = nextConfig
+};
