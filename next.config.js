@@ -13,7 +13,18 @@ const nextConfig = {
       },
     ],
   },
-  experimentalUseImportModule: false
+  webpack: (
+    config,
+    { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
+    ) => {
+      plugins: [
+        config.module.generator.asset.publicPath = "/_next/",
+        new MiniCssExtractPlugin({
+          experimentalUseImportModule: false
+        }),
+      ]
+    return config
+  },
 }
 
 
