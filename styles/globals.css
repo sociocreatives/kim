@@ -937,7 +937,9 @@ input{
       font-size: 2rem;
     }
     }
-  
+  .faq-photo{
+    height: 150px;
+  }
 
   .AccordionSection{
     transition: all 0.3s ease-out;
