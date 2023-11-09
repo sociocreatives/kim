@@ -5,6 +5,15 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 import Image from 'next/image';
 
 function Faq() {
+
+  const divStyle = {
+    backgroundImage: 'url("/assets/images/about-header.jpg")',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    height: '250px', 
+    marginTop: '3rem'
+  };
+  
   const [clicked, setClicked] = useState(false);
 
   const toggle = index => {
@@ -16,19 +25,7 @@ function Faq() {
   return (
     <div className="faq-photo-one">
       <div className="faq-photo"
-      style={{
-        position: 'relative', 
-        width: '100vw',
-        height: '25vh',
-        objectFit: 'cover',
-        zIndex: '-1',
-      }}>
-         <Image 
-         src="/assets/images/faq-header.jpg" 
-         alt="faq-header"
-         layout="fill"
-         objectFit="cover"
-         className="image"/>
+      style={divStyle}>
       </div>
         <div className="faq">
           <div className="FaqHeader" data-aos="fade-up">Frequently asked questions<div></div></div>
