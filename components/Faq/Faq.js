@@ -26,7 +26,7 @@ function Faq() {
          <Image 
          src="/assets/images/faq-header.jpg" 
          alt="faq-header"
-        layout="fill"
+         layout="fill"
          objectFit="cover"
          className="image"/>
       </div>
